@@ -87,7 +87,7 @@
    - Bellman-Ford can find path with negative weights cycles which dijkstra cannot.
  
 
-## **Business cases 🤝 SDG Targets and Indiactors** 
+## **Business cases 🤝 SDG Targets and Indicators** 
 1. **TOURISM**
    - **Goal-8** : Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.
    - **SDG Target 8.9** :  By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products.
