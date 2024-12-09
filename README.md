@@ -3,10 +3,16 @@
 ## Handled by Nandita Gaitonde : 01FE23BCS117
 
 ### Business Cases identified 
-1. **Tourism**
-2. **Energy generation and supply**
-3. **Road transport**
-
+1. **Tourism** 🏰
+   - Since the city of Chitranagari is designed with refernce to a city in Rajasthan, which is rich in culture and tourism, it does have many tourist attractions.
+   - Tourism has been included with the motive of 1. Showcasing India's heritage and 2. The revenue generated from these could be used for the city's infrastructural development.
+   - Toursit attration includes a fort, palace , amusement park, botanical garden , museum. This business case includes fnding the best way these tourist spots could be showcased in order to generate more revenue.
+     
+2. **Energy generation and supply** ⚡
+   - City with 1500 sq.km area indeed would harbour a lot of households atleast in the near future, which woud lead to high energy consumption, mainly electricity. Fot this, there is wind power and solar power plants set up. Along with this, it needs to be properly distributed to every household efficiently for which efficient pipelines would be required, which this business case aims to solve.
+   
+3. **Road transport** 🛣
+   - Such a huge city which has area greater than the city of Delhi,India(1484 sq.km) would have people commuting to different corners via roads and would require efficient roads well connected within the city and also connecting the neighbouring areas. This business case aims to reduce redundancy of path and aims to provide adequate , good quality transport. It also aims to isolate the highways so that it would not intefere with the busy city.
 
 ## COURSE LEARNING REFLECTIONS
 ### 1. Iteration , Recurssion, Backtracking
@@ -80,3 +86,30 @@
    - Warshall indicates if there is a path.
    - Bellman-Ford can find path with negative weights cycles which dijkstra cannot.
  
+
+## **Business cases 🤝 SDG Targets and Indiactors** 
+1. **TOURISM**
+   - **Goal-8** : Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.
+   - **SDG Target 8.9** :  By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products.
+   - **SDG Indicator** : **8.9.1** Tourism direct GDP (as a percentage of total GDP and in growth rate); and number of jobs in tourism industries (as a percentage of total jobs and growth rate of jobs, by sex) .
+  
+   - The SDG promotes tourism in showcasing local products and culture. It also promotes job opportunities and directly impact in revenue generation which is exactly what this business case is aiming for. 
+  
+2. **ENERGY GENERATION AND SUPPLY**
+   - **SDG Goal-7** : Ensure access to affordable, reliable, sustainable and modern energy for all.
+   - **SDG Target 7.1** :  By 2030, ensure universal access to affordable, reliable and modern energy services.
+   - **SDG Indicator** : - **7.1.1** :  Percentage of household with access to electricity.           
+                         - **7.1.2** : Percentage of household with primary reliance on clean fuels and technology.
+
+   - Of 759 milion  people , 1 out of 10 do not have access to electricity and have to use biomass fuels such as charcoal, coal which is leading to death of children due to indoor pollution.
+   - The SDG goal-7 aims to replace the open fires and outdated stoves to affordable and clean energy by 2030.
+   - Energy efficiency and increase use of renewable sources contribute to seriousness of climate change  and reduce the risk of disasters.
+  
+3. **ROAD TRANSPORT**
+   - **SDG Goal-9** : Make cities and human settlements inclusive, safe, resilient and sustainable 
+   - **SDG Target 11.2** : By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons.
+   - **SDG Indicator** : **11.2.1** : Proportion of the population that has convenient access to public transport, disaggregated by age group, sex and persons with disabilities.
+  
+   - The SDG aims on connecting all the major places and providing safety in transport inclusive of physically challenged and elderly people.
+   - This comes in accordance with efficient land use planning , in the sense that how much area is used for roads and its connectivity. It mainly concentrated on residentials and employement generative areas.
+     
