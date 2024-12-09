@@ -93,7 +93,8 @@
    - **SDG Target 8.9** :  By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products.
    - **SDG Indicator** : **8.9.1** Tourism direct GDP (as a percentage of total GDP and in growth rate); and number of jobs in tourism industries (as a percentage of total jobs and growth rate of jobs, by sex) .
   
-   - The SDG promotes tourism in showcasing local products and culture. It also promotes job opportunities and directly impact in revenue generation which is exactly what this business case is aiming for. 
+   - The SDG promotes tourism in showcasing local products and culture. It also promotes job opportunities and directly impact in revenue generation which is exactly what this business case is aiming for.
+   - This would require us to find the quickest/shortest path that would join every tourist site and also make the path quicker connecting each site. Kruscal would be a good option to find the shortest path connecting every site. [For code, click here](
   
 2. **ENERGY GENERATION AND SUPPLY**
    - **SDG Goal-7** : Ensure access to affordable, reliable, sustainable and modern energy for all.
