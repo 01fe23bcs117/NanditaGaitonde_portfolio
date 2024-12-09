@@ -94,7 +94,7 @@
    - **SDG Indicator** : **8.9.1** Tourism direct GDP (as a percentage of total GDP and in growth rate); and number of jobs in tourism industries (as a percentage of total jobs and growth rate of jobs, by sex) .
   
    - The SDG promotes tourism in showcasing local products and culture. It also promotes job opportunities and directly impact in revenue generation which is exactly what this business case is aiming for.
-   - This would require us to find the quickest/shortest path that would join every tourist site and also make the path quicker connecting each site. Kruscal would be a good option to find the shortest path connecting every site. [For code, click here](
+   - This would require us to find the quickest/shortest path that would join every tourist site and also make the path quicker connecting each site. Kruscal would be a good option to find the shortest path connecting every site. [Kruscal code](https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/Kruscal.cpp)
   
 2. **ENERGY GENERATION AND SUPPLY**
    - **SDG Goal-7** : Ensure access to affordable, reliable, sustainable and modern energy for all.
@@ -105,6 +105,7 @@
    - Of 759 milion  people , 1 out of 10 do not have access to electricity and have to use biomass fuels such as charcoal, coal which is leading to death of children due to indoor pollution.
    - The SDG goal-7 aims to replace the open fires and outdated stoves to affordable and clean energy by 2030.
    - Energy efficiency and increase use of renewable sources contribute to seriousness of climate change  and reduce the risk of disasters.
+   - We need to sort based on which areas needs to be supplied with energy and which is barren land for now. For that a sorting algorithm needs to be implemented. [Quick sort code](https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/Quick%20sort.cpp)
   
 3. **ROAD TRANSPORT**
    - **SDG Goal-9** : Make cities and human settlements inclusive, safe, resilient and sustainable 
