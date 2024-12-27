@@ -9,9 +9,10 @@ body {
 
 /* Header and Description Box Styling */
 .header-box {
+    width: 75%; /* Set box width to 3/4 of the page */
+    margin: 20px auto; /* Center the box horizontally */
     background-color: #3d2961; /* Slightly lighter purple for boxes */
     padding: 20px;
-    margin: 20px 0;
     border-radius: 10px; /* Rounded corners for the boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
@@ -24,23 +25,13 @@ body {
 }
 
 /* Header Styling */
-.header-box h1, 
-.header-box h2, 
-.header-box h3, 
-.header-box h4, 
-.header-box h5, 
-.header-box h6 {
+.header-box h1 {
     color: #ffd966; /* Yellow color for headers */
     margin: 0 0 10px 0;
 }
 
 /* Divider After Headers */
-.header-box h1::after, 
-.header-box h2::after, 
-.header-box h3::after, 
-.header-box h4::after, 
-.header-box h5::after, 
-.header-box h6::after {
+.header-box h1::after {
     content: '';
     display: block;
     width: 100%;
@@ -52,5 +43,6 @@ body {
 /* Description Styling */
 .header-box p {
     margin: 0;
+    font-size: 24px; /* Font size for descriptions */
     color: white; /* Ensure text in description is white */
 }
