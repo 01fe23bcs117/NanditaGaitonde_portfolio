@@ -9,7 +9,7 @@ body {
 
 /* Header and Description Box Styling */
 .header-box {
-    width: 50%; /* Set box width to 3/4 of the page */
+    width: 75%; /* Set box width to 3/4 of the page */
     margin: 20px auto; /* Center the box horizontally */
     background-color: #3d2961; /* Slightly lighter purple for boxes */
     padding: 20px;
