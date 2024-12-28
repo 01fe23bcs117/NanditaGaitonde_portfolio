@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepts in Algorithms</title>
+    <style>
+        body {
+            background-color: #20124d;
+            color: white;
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            color: #ffd966;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+        }
+
+        hr {
+            border: 1px solid white;
+            width: 100%;
+        }
+
+        /* Container to center content */
+        .content {
+            margin: 3cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h3>1. Iteration, Recursion, Backtracking</h3>
+        <hr>
+        <p>
+            There are many instances in nature where we come across Iteration, Recursion, and Backtracking.<br><br>
+            <strong>Iteration</strong>: It is the process of executing the same task again and again.<br>
+            Some examples in nature could be boarding people in airplanes, the placement of Matryoshka dolls. In these instances, one performs the same action over and over again, like placing the dolls until there are no more dolls to place (end condition).<br><br>
+            <strong>Recursion</strong>: It is the process of accomplishing the problem based on the results of the same problem at smaller instances.<br>
+            Examples can be the growth of a plant every day, the process of learning.<br>
+            In these, the growth and learning of yesterday impacts the results of today.<br><br>
+            <strong>Backtracking</strong>: It is a way of exploring the possible paths and returning back if a path fails to search for a new path.<br>
+            Examples are N-Queens problem, Sudoku.<br>
+            In these, it's always trial and error.
+        </p>
+
+        <h3>2. Space and Time Efficiency & Orders of Growth</h3>
+        <hr>
+        <p>
+            <strong>Space Efficiency</strong>: It is the extra space taken by the algorithm.<br>
+            <strong>Time Efficiency</strong>: It is the time taken by the algorithm.<br>
+            These are important to know about the practicality and how efficient it is to use a particular algorithm for a particular problem.<br><br>
+            <strong>Orders of Growth</strong>: It determines how the time increases as we increase the inputs.<br>
+            It can be Constant, Logarithmic, Linear, Quadratic, Cubic.
+        </p>
+
+        <h3>3. Design Principles</h3>
+        <hr>
+        <p>
+            Various design principles give an idea that even if every design principle has been developed with the intention of optimizing the problem, using it appropriately for a particular problem is very necessary.<br>
+            For example, 'Pruning' is very well suited for the N-Queens problem, and using 'Parental dominance' makes no sense.<br>
+            'Bit manipulation' was used in Fenwick trees, whereas 'Edge relaxation' was used in spanning trees. Interchanging these principles only complicates the problems. Hence, choosing the appropriate principle makes it efficient.
+        </p>
+
+        <h3>4. Tree Data Structures</h3>
+        <hr>
+        <p>
+            Trees are used for hierarchical data management.<br>
+            Trees such as AVL, Red-Black, 2-3 can be used if balance is needed, which can be achieved by rotations and if searching needs to be quicker. The time efficiency for insertion and deletion is O(logn) for all the three tree data structures.<br>
+            Trie is used to manage character data.<br>
+            Heap must satisfy tree shape requirement and parental dominance.
+        </p>
+
+        <h3>5. Array Query Algorithms</h3>
+        <hr>
+        <p>
+            These are used when the data set is small and static.<br>
+            It could be used to find the sum, minimum, maximum over a given array set.<br>
+            It uses the principle of 'Pre-computing,' wherein the previous result is stored and need not be calculated again, if needed.<br>
+            Sparse table, segment trees, Fenwick trees use this principle.
+        </p>
+
+        <h3>6. Trees and Graphs</h3>
+        <hr>
+        <p>
+            <strong>Trees</strong> are used to store hierarchical data and have no cycles (acyclic graph).<br>
+            <strong>Graphs</strong> are ones with edges and nodes and can even form a cycle. They need not be hierarchical.<br><br>
+            Trees are traversed through <strong>preorder, inorder, postorder</strong> traversal with one root node followed by left and right subtrees.<br>
+            Graphs are traversed by <strong>Depth First Search (DFS)</strong> and <strong>Breadth First Search (BFS)</strong> with one source vertex.
+        </p>
+
+        <h3>7. Sorting and Searching</h3>
+        <hr>
+        <p>
+            <strong>Bubble sort</strong> was the most basic sort developed where an array is sorted with the reference of a minimum and comparing with every adjacent data.<br>
+            <strong>Selection sort</strong> is better than bubble but not for large datasets as it goes over the whole list.<br>
+            <strong>Insertion sort</strong> is used for partially sorted data as it takes fewer comparisons.<br>
+            <strong>Merge</strong> and <strong>Quick sort</strong> are efficient for larger datasets as they use the divide and conquer fundamental to break down large data into smaller ones.<br><br>
+            <strong>Boyer-Moore</strong> uses BSST and GSST.<br>
+            <strong>Knuth-Morris-Pratt</strong> uses the pi-table.<br>
+            <strong>Rabin-Karp</strong> uses variants of hash to make search efficient.
+        </p>
+
+        <h3>8. Spanning Trees and Shortest Path</h3>
+        <hr>
+        <p>
+            Spanning trees use various algorithms to find the shortest path between source to destination.<br>
+            Kruskal finds the shortest path by visiting every node.<br>
+            Dijkstra uses the cost matrix to find the shortest path but does not necessarily visit every node.<br>
+            Floyd indicates if there exists a shortest path.<br>
+            Warshall indicates if there is a path.<br>
+            Bellman-Ford can find paths with negative weight cycles which Dijkstra cannot.
+        </p>
+    </div>
+</body>
+</html>
