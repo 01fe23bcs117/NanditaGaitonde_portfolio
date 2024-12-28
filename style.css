@@ -1,8 +1,8 @@
 /* General Body Styling */
 body {
-    background-color: black;
+    background-color: #20124d;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 /* Header Styling */
@@ -11,12 +11,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #121212;
-    border-bottom: 2px solid green;
+    background-color: #20124d;
+    border-bottom: 2px white;
 }
 
 header h1 {
-    color: green;
+    color: #ffd966;
     font-size: 24px;
 }
 
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: green;
+    color: #ffd966;
 }
 
 /* Main Header Styling */
@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .main-header h1 {
-    color: green;
+    color: #ffd966;
     font-size: 36px;
 }
 
