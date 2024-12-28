@@ -3,77 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concepts in Algorithms</title>
+    <title>Course Reflections</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
     <style>
-        body {
-            background-color: #20124d;
-            color: white;
-            font-family: 'Merriweather', serif;
-            margin: 0;
+        /* Navigation Bar Styling */
+        header {
+            background-color: #003b50; /* Dark blue background */
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffd966; /* Yellow color for the header */
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
             padding: 0;
         }
 
-        /* Navigation Bar Styling */
-        nav {
-            background-color: #003b50;
-            padding: 15px;
-            text-align: center;
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
 
         nav a {
-            color: #cfe2f3;
-            font-size: 18px;
-            margin: 0 20px;
+            color: #cfe2f3; /* Light blue for links */
             text-decoration: none;
+            font-size: 18px;
         }
 
         nav a:hover {
-            color: #ffd966;
+            color: #ffd966; /* Yellow on hover */
         }
 
-        h1 {
-            color: #ffd966;
-            font-size: 40px;
+        /* Page specific styles */
+        body {
+            background-color: #20124d; /* Dark purple background */
+            color: white;
+            font-family: 'Merriweather', serif; /* Merriweather font */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .highlight {
+            font-size: 50px;
+            color: #ffd966; /* Yellow color for the statement */
             font-weight: bold;
-            text-decoration: underline;
-            text-align: center;
-            margin-top: 30px;
         }
 
-        h3 {
-            color: #ffd966;
-            font-size: 30px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+        h1, h2 {
+            color: #ffd966; /* Yellow color for headers */
+            margin-top: 20px;
         }
 
         p {
-            font-size: 20px;
-            margin: 0 0 20px 0;
+            margin: 10px 0;
+            font-size: 24px; /* Set description font size */
         }
 
-        hr {
-            border: 1px solid white;
-            width: 100%;
+        .header-box {
+            background-color: #3d2961; /* Slightly lighter purple for boxes */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px; /* Rounded corners for the boxes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
         }
 
         .content {
-            margin: 3cm;
+            margin-top: 40px;
         }
 
-        ul {
-            margin: 10px 0;
+        .content h3 {
+            color: #ffd966;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
             padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-<nav>
+    <header>
+        <h1>DAA-Course Project</h1>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Course-Reflections.html">Course Reflections</a></li>
@@ -81,117 +99,42 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+    </header>
 
-    <!-- Title -->
-    <h1>Course Learning Reflections</h1>
-
-    <!-- Content -->
-    <div class="content">
-        <h3>1. Iteration, Recursion, Backtracking</h3>
-        <hr>
-        <p>
-            There are many instances in nature where we come across Iteration, Recursion, and Backtracking.<br><br>
-            <strong>Iteration</strong>: 
-            <ul>
-                <li>It is the process of executing the same task again and again.</li>
-                <li>Some examples in nature could be boarding people in airplanes, the placement of Matryoshka dolls.</li>
-                <li>In these instances, one performs the same action over and over again, like placing the dolls until there are no more dolls to place (end condition).</li>
-            </ul>
-            <strong>Recursion</strong>: 
-            <ul>
-                <li>It is the process of accomplishing the problem based on the results of the same problem at smaller instances.</li>
-                <li>Examples can be the growth of a plant every day, the process of learning.</li>
-                <li>In these, the growth and learning of yesterday impacts the results of today.</li>
-            </ul>
-            <strong>Backtracking</strong>: 
-            <ul>
-                <li>It is a way of exploring the possible paths and returning back if a path fails to search for a new path.</li>
-                <li>Examples are N-Queens problem, Sudoku.</li>
-                <li>In these, it's always trial and error.</li>
-            </ul>
-        </p>
-
-        <h3>2. Space and Time Efficiency & Orders of Growth</h3>
-        <hr>
-        <p>
-            <ul>
-                <li><strong>Space Efficiency</strong>: It is the extra space taken by the algorithm.</li>
-                <li><strong>Time Efficiency</strong>: It is the time taken by the algorithm.</li>
-                <li>These are important to know about the practicality and how efficient it is to use a particular algorithm for a particular problem.</li>
-                <li><strong>Orders of Growth</strong>: It determines how the time increases as we increase the inputs.</li>
-                <li>It can be Constant, Logarithmic, Linear, Quadratic, Cubic.</li>
-            </ul>
-        </p>
-
-        <h3>3. Design Principles</h3>
-        <hr>
-        <p>
-            <ul>
-                <li>Various design principles give an idea that even if every design principle has been developed with the intention of optimizing the problem, using it appropriately for a particular problem is very necessary.</li>
-                <li>For example, 'Pruning' is very well suited for the N-Queens problem, and using 'Parental dominance' makes no sense.</li>
-                <li>'Bit manipulation' was used in Fenwick trees, whereas 'Edge relaxation' was used in spanning trees. Interchanging these principles only complicates the problems. Hence, choosing the appropriate principle makes it efficient.</li>
-            </ul>
-        </p>
-
-        <h3>4. Tree Data Structures</h3>
-        <hr>
-        <p>
-            <ul>
-                <li>Trees are used for hierarchical data management.</li>
-                <li>Trees such as AVL, Red-Black, 2-3 can be used if balance is needed, which can be achieved by rotations and if searching needs to be quicker. The time efficiency for insertion and deletion is O(logn) for all the three tree data structures.</li>
-                <li>Trie is used to manage character data.</li>
-                <li>Heap must satisfy tree shape requirement and parental dominance.</li>
-            </ul>
-        </p>
-
-        <h3>5. Array Query Algorithms</h3>
-        <hr>
-        <p>
-            <ul>
-                <li>These are used when the data set is small and static.</li>
-                <li>It could be used to find sum, minimum, maximum over a given array set.</li>
-                <li>It uses the principle of 'Pre-computing,' wherein the previous result is stored and need not be calculated again, if needed.</li>
-                <li>Sparse table, segment trees, Fenwick trees use this principle.</li>
-            </ul>
-        </p>
-
-        <h3>6. Trees and Graphs</h3>
-        <hr>
-        <p>
-            <ul>
-                <li><strong>Trees</strong> are used to store hierarchical data and have no cycles (acyclic graph).</li>
-                <li><strong>Graphs</strong> are ones with edges and nodes and can even form a cycle. They need not be hierarchical.</li>
-                <li>Trees are traversed through <strong>preorder, inorder, postorder</strong> traversal with one root node followed by left and right subtrees.</li>
-                <li>Graphs are traversed by <strong>Depth First Search (DFS)</strong> and <strong>Breadth First Search (BFS)</strong> with one source vertex.</li>
-            </ul>
-        </p>
-
-        <h3>7. Sorting and Searching</h3>
-        <hr>
-        <p>
-            <ul>
-                <li><strong>Bubble sort</strong> was the most basic sort developed where an array is sorted with the reference of a minimum and comparing with every adjacent data.</li>
-                <li><strong>Selection sort</strong> is better than bubble but not for large datasets as it goes over the whole list.</li>
-                <li><strong>Insertion sort</strong> is used for partially sorted data as it takes fewer comparisons.</li>
-                <li><strong>Merge</strong> and <strong>Quick sort</strong> are efficient for larger datasets as they use the divide and conquer fundamental to break down large data into smaller ones.</li>
-                <li><strong>Boyer-Moore</strong> uses BSST and GSST.</li>
-                <li><strong>Knuth-Morris-Pratt</strong> uses pi-table.</li>
-                <li><strong>Rabin-Karp</strong> uses variants of hash to make search efficient.</li>
-            </ul>
-        </p>
-
-        <h3>8. Spanning Trees and Shortest Path</h3>
-        <hr>
-        <p>
-            <ul>
-                <li>Spanning trees use various algorithms to find the shortest path between source and destination.</li>
-                <li>Kruskal finds the shortest path by visiting every node.</li>
-                <li>Dijkstra uses cost matrix to find the shortest path but does not necessarily visit every node.</li>
-                <li>Floyd indicates if there exists a shortest path.</li>
-                <li>Warshall indicates if there is a path.</li>
-                <li>Bellman-Ford can find paths with negative weight cycles which Dijkstra cannot.</li>
-            </ul>
-        </p>
+    <!-- Main Content -->
+    <div class="main-header">
+        <h1 class="highlight">printf("Course Reflections");</h1>
     </div>
+
+    <div class="content">
+        <h3>Reflection on Iteration, Recursion, and Backtracking</h3>
+        <div class="header-box">
+            <p>
+                Iteration, recursion, and backtracking are fundamental concepts in algorithm design. These concepts help solve complex problems in a step-by-step manner. Reflection on their usage in problem-solving has enhanced my understanding of their practical applications.
+            </p>
+        </div>
+
+        <h3>Reflection on Space and Time Efficiency</h3>
+        <div class="header-box">
+            <p>
+                Understanding space and time efficiency has been crucial in optimizing algorithms. The concept of time and space complexity and their impact on real-world problems is invaluable.
+            </p>
+        </div>
+
+        <h3>Reflection on Design Principles</h3>
+        <div class="header-box">
+            <p>
+                Learning design principles such as pruning, bit manipulation, and edge relaxation has allowed me to make smarter decisions while tackling algorithmic problems. These principles guide the efficient implementation of algorithms.
+            </p>
+        </div>
+
+        <h3>Reflection on Tree and Graph Data Structures</h3>
+        <div class="header-box">
+            <p>
+                Tree and graph data structures are essential for solving hierarchical and network-based problems. Understanding their traversal methods and applications in real-world scenarios has been an insightful experience.
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
