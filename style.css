@@ -3,6 +3,9 @@ body {
     background-color: #20124d;
     color: white;
     font-family: 'Merriweather', serif;
+    padding-left: 3cm;  /* Left gap */
+    padding-right: 3cm; /* Right gap */
+    margin: 0; /* Remove default margin */
 }
 
 /* Header Styling */
@@ -10,9 +13,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 18px 20px; /* Reduced padding by 1.5cm */
     background-color: #20124d; /* Navigation background color */
     border-bottom: 2px solid white;
+    height: 4.5cm; /* Adjusted height */
 }
 
 header h1 {
@@ -45,6 +49,10 @@ nav ul li a:hover {
 .main-header {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4.5cm); /* Adjust height to center in the remaining space */
 }
 
 .main-header h1 {
