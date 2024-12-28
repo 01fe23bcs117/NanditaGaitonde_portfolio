@@ -11,8 +11,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #20124d;
-    border-bottom: 2px white;
+    background-color: #20124d; /* Navigation background color */
+    border-bottom: 2px solid white;
 }
 
 header h1 {
@@ -32,13 +32,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* Default link color */
     text-decoration: none;
     font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #ffd966;
+    color: #ffd966; /* Hover color for navigation links */
 }
 
 /* Main Header Styling */
@@ -48,17 +48,12 @@ nav ul li a:hover {
 }
 
 .main-header h1 {
-    color: #ffd966;
+    color: #ffd966; /* Updated color for DAA Course Project */
     font-size: 36px;
 }
 
-/* General Page Styling */
-body {
-    background-color: #20124d; /* Dark purple background */
-    color: white; /* White text color */
-    font-family: 'Merriweather', serif; /* Merriweather font for all text */
-    margin: 0;
-    padding: 20px;
+.main-header p {
+    font-size: 18px;
 }
 
 /* Header and Description Box Styling */
@@ -69,21 +64,20 @@ body {
     padding: 20px;
     border-radius: 10px; /* Rounded corners for the boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition */
 }
 
 /* Hover Effect for Boxes */
-  /* Hover effect */
-  .hover-box:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+.header-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); /* Shadow effect */
     background-color: #351c75; /* Lighter blue on hover */
     cursor: pointer;
-  }
-/* Header Styling */
+}
+
+/* Header Styling for the Box */
 .header-box h1 {
-    color: #ffd966; /* Yellow color for headers */
+    color: #ffd966; /* Updated color */
     margin: 0 0 10px 0;
 }
 
@@ -103,5 +97,3 @@ body {
     font-size: 24px; /* Font size for descriptions */
     color: white; /* Ensure text in description is white */
 }
-
-
