@@ -1,3 +1,57 @@
+/* General Body Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+    border-bottom: 2px solid green;
+}
+
+header h1 {
+    color: green;
+    font-size: 24px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+/* Main Header Styling */
+.main-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-header h1 {
+    color: green;
+    font-size: 36px;
+}
+
 /* General Page Styling */
 body {
     background-color: #20124d; /* Dark purple background */
@@ -49,3 +103,5 @@ body {
     font-size: 24px; /* Font size for descriptions */
     color: white; /* Ensure text in description is white */
 }
+
+
