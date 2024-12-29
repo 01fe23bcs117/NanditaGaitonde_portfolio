@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Goals - City Development</title>
+  <!-- Navigation Bar -->
+        <header>
+        <h1>DAA-Course Project</h1>
+         <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Course-Reflections.html">Course Reflections</a></li>
+                <li><a href="learning-reflection.html">Learning Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        body {
+            background-color: #282a36; /* Dark background */
+            color: #f8f8f2; /* Light text color */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            color: #f8f8f2;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        .section-box {
+            background-color: #44475a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            color: #8be9fd;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .subcases-title {
+            color: #f8f8f2;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #f8f8f2;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            font-size: 24px;
+            color: #f8f8f2;
+            margin-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .design-technique, .efficiency {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Implementation</h1>
+
+    <!-- Tourism Section -->
+    <div class="section-box">
+        <p class="section-title">i) Tourism</p>
+        <p class="subcases-title">Sub cases:</p>
+        
+        <ul>
+            <li><b>1. Mapping tourist places with area codes:</b></li>
+            <p>- For someone who's been visiting the city for the first time, it would be difficult to navigate through the city, for which <span class="highlight">arrays</span> could be used.</p>
+            <p>- Array would help store the area code of various tourist places that the city offers to be visited. This way it would be easy for a person to search places and even communicate with the locals.</p>
+
+            <li><b>2. Planning the itinerary:</b></li>
+            <p>- The first step for visitors would be to decide in what order they would like to explore the city, for which <span class="highlight">lists</span> could be used.</p>
+            <p>- It manages the sequence of destination and the time required to travel from one to other sequentially.</p>
+
+            <li><b>3. Recommending top stays:</b></li>
+            <p>- Once the itinerary is done, the next step would be to search for a well-suited stay, for which <span class="highlight">heap sort</span> would be used to prioritize and recommend the top-rated stays or restaurants for tourists.</p>
+            <p>- This would be accomplished using <span class="highlight">structure</span> where all the related details of each stay/hotel would be stored for easy access (e.g., Name, area, price per night, rating, contact).</p>
+            <p>- Max heap would be constructed with the highest-rated hotel at the root and based on the ratings it would extract the top-rated stays.</p>
+            <p class="design-technique">Design technique: Parental dominance, Balancing a Tree, Transform and conquer</p>
+            <p class="efficiency">Efficiency: O(nlogn)</p>
+
+            <li><b>4. Discovering popular landmarks:</b></li>
+            <p>- <span class="highlight">Trie</span> would be used to autocomplete the search of popular destinations, which would be helpful for non-local residents. For example, by searching 'palac', it completes and shows 'chitra palace' (hypothetical).</p>
+            <p>- In addition to this, <span class="highlight">Boyer-Moore algorithm</span> would help confirm the existence of the place searched because it works faster for predictable text, such as popular landmarks within the city with longer and complicated names.</p>
+            <p class="design-technique">Design technique: Pattern Recognition, Prefix and Suffix, Space and Time Tradeoff</p>
+            <p class="efficiency">Efficiency: O(n⋅m) where: n = Length of the text, m = Length of the pattern.</p>
+
+            <li><b>5. Managing ticket queues:</b></li>
+            <p>- At historic landmarks like palaces, forts, museums with dense populations, <span class="highlight">queues</span> would be used to ensure the smooth ticket generation process, following FIFO (First In First Out).</p>
+            <p>- In addition to this, <span class="highlight">Hashing</span> would be used to store the tourist details before entering the site to maintain records of their visit.</p>
+            <p class="design-technique">Design technique: Space and Time Tradeoff.</p>
+
+            <li><b>6. Optimizing travel:</b></li>
+            <p>- Optimizing travel would be based on one's preference.</p>
+            <p>- In order to find the cost-effective path with minimum cost for traveling from one heritage site to another, <span class="highlight">Kruskal algorithm</span> along with <span class="highlight">Union Find</span> would be used as it does not generate cycles.</p>
+            <p class="design-technique">Design technique: Greedy technique, Minimum Spanning tree algorithm</p>
+            <p class="efficiency">Efficiency: |E|log|E|</p>
+
+            <p>- In order to find the time-effective path such as the shortest path, <span class="highlight">Dijkstra</span> would be used as it works well with positive cycles.</p>
+            <p class="design-technique">Design technique: Greedy technique, Edge Relaxation, Single source shortest path</p>
+            <p class="efficiency">Efficiency: Θ(|V|^2) for graphs represented by their weight matrix and the priority queue implemented by an unordered array and O(|E| log|V|) for graphs represented by their adjacency lists and the priority queue implemented as a min-heap.</p>
+
+            <p>- In order to narrow down the traveling by knowing which two places take less cost, time, and distance to travel, <span class="highlight">Floyd</span> would be used in cases where tourists wish to travel only a few nearby places.</p>
+            <p class="design-technique">Design technique: Dynamic Programming, Kleene Closure, All-pairs shortest path</p>
+            <p class="efficiency">Efficiency: cubic</p>
+
+            <li><b>7. Identifying peak tourist months:</b></li>
+            <p>- To keep track of the maximum revenue generated from each month, a <span class="highlight">sparse table</span> would be used for statistical planning.</p>
+            <p class="design-technique">Design technique: Dynamic Programming, Pre-Computing.</p>
+        </ul>
+    </div>
+
+    <!-- Energy Generation and Supply Section -->
+    <div class="section-box">
+        <p class="section-title">ii) Energy Generation and Supply</p>
+        <p class="subcases-title">Sub cases:</p>
+        
+        <ul>
+            <li><b>1. Storing monthly energy output:</b></li>
+            <p>- To keep track of the total energy generated by the solar or wind power source, <span class="highlight">arrays</span> would be used as it is homogeneous data.</p>
+
+            <li><b>2. Tracking cumulative energy distribution over time:</b></li>
+            <p>- To keep track of total energy distributed to various areas over a period of time by cumulatively adding new supplied energy to previous ones, <span class="highlight">Fenwick trees</span> would be used for this purpose. It can also query how much energy a set of customers or a group of sectors consumed in the last month.</p>
+            <p class="design-technique">Design technique: Dynamic programming, Pre-computing</p>
+            <p class="efficiency">Efficiency: O(log n)</p>
+
+            <li><b>3. Determining connectivity by shared energy line:</b></li>
+            <p>- In order to know which group of areas or a particular region receives energy from the same source, <span class="highlight">union-find</span> would play a role.</p>
+            <p>- It could help the concerned distributing sector to improve the lines or connect the regions to any newly built line or source.</p>
+
+            <li><b>4. Deciding on energy generation and distribution in the city:</b></li>
+            <p>- To handle large datasets of various wind and solar plants present in the city and the energy it generates, efficient sorting is required. For this, <span class="highlight">Quick sort</span> would be used to sort the energy data so that distributors know which plants are generating more power and whether optimization is needed.</p>
+            <p>- Similarly, it would determine which areas consume more energy to install more pipelines and which consume less in order to merge nearby pipelines.</p>
+            <p class="design-technique">Design technique: Divide and Conquer</p>
+
+            <li><b>5. Searching for house registered:</b></li>
+            <p>- During conflicts among customers and the agency, the agency would use <span class="highlight">Knuth-Morris-Pratt algorithm</span> to search whether the customer has registered for the supply agency and whether they are eligible to receive the supply.</p>
+            <p class="design-technique">Design technique: Pattern Matching</p>
+            <p class="efficiency">Efficiency: O(n + m) where n is the length of the string and m is the length of the pattern</p>
+        </ul>
+    </div>
+
+    <!-- Road Transport Section -->
+    <div class="section-box">
+        <p class="section-title">iii) Road Transport</p>
+        <p class="subcases-title">Sub cases:</p>
+        
+        <ul>
+            <li><b>1. Mapping roads:</b></li>
+            <p>- A simple road map can be represented by <span class="highlight">adjacency lists</span> to show which roads are connected. It will store all available routes from one location to another.</p>
+
+            <li><b>2. Managing traffic:</b></li>
+            <p>- To handle the traffic data at different points, we use <span class="highlight">heaps</span> to manage the priority of routes and avoid traffic jams during peak hours.</p>
+
+            <li><b>3. Route optimization for public transport:</b></li>
+            <p>- For public transportation planning, we need to identify the shortest routes available. The <span class="highlight">Dijkstra algorithm</span> will help in calculating the shortest possible route between various transport points (bus stops, metro stations).</p>
+            <p class="design-technique">Design technique: Greedy algorithm, Single source shortest path</p>
+            <p class="efficiency">Efficiency: O(|V|^2)</p>
+
+            <li><b>4. Traffic prediction during peak hours:</b></li>
+            <p>- <span class="highlight">Machine learning algorithms</span> can predict road traffic based on historical data. This would allow the city to plan accordingly and manage resources effectively during peak hours.</p>
+
+            <li><b>5. Dynamic toll management:</b></li>
+            <p>- A dynamic toll system can optimize traffic flow by adjusting toll rates based on traffic congestion using <span class="highlight">HashMaps</span> for fast lookups and updates of toll rates based on real-time data.</p>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+<link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
