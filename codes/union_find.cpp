@@ -1,6 +1,3 @@
-union find
-
-
 #include <iostream>
 using namespace std;
 
