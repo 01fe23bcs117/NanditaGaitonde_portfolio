@@ -124,6 +124,8 @@
             <p>- Max heap would be constructed with the highest-rated hotel at the root and based on the ratings it would extract the top-rated stays.</p>
             <p class="design-technique">Design technique: Parental dominance, Balancing a Tree, Transform and conquer</p>
             <p class="efficiency">Efficiency: O(nlogn)</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/heap.cpp" target="_blank">Heap sort code</a>
             <div class="divider"></div>
 
             <li><b class="underline">4. Discovering popular landmarks:</b></li>
@@ -131,12 +133,18 @@
             <p>- In addition to this, <span class="highlight">Boyer-Moore algorithm</span> would help confirm the existence of the place searched because it works faster for predictable text, such as popular landmarks within the city with longer and complicated names.</p>
             <p class="design-technique">Design technique: Pattern Recognition, Prefix and Suffix, Space and Time Tradeoff</p>
             <p class="efficiency">Efficiency: O(n⋅m) where: n = Length of the text, m = Length of the pattern.</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/trie.cpp" target="_blank">Trie code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/boyer_moore.cpp" target="_blank">Boyer Moore algorithm</a>
             <div class="divider"></div>
 
             <li><b class="underline">5. Managing ticket queues:</b></li>
             <p>- At historic landmarks like palaces, forts, museums with dense populations, <span class="highlight">queues</span> would be used to ensure the smooth ticket generation process, following FIFO (First In First Out).</p>
             <p>- In addition to this, <span class="highlight">Hashing</span> would be used to store the tourist details before entering the site to maintain records of their visit.</p>
             <p class="design-technique">Design technique: Space and Time Tradeoff.</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/hashing.cpp" target="_blank">Hashing code</a>
             <div class="spacer"></div>
             <div class="divider"></div>
 
@@ -144,8 +152,8 @@
             <p>- Optimizing travel would be based on one's preference.</p>
             <p>- In order to find the cost-effective path with minimum cost for traveling from one heritage site to another, <span class="highlight">Kruskal algorithm</span> along with <span class="highlight">Union Find</span> would be used as it does not generate cycles.</p>
             <p class="design-technique">Design technique: Greedy technique, Minimum Spanning tree algorithm</p>
-            
             <p class="efficiency">Efficiency: |E|log|E|</p>
+            
             <p>- In order to find the time-effective path such as the shortest path, <span class="highlight">Dijkstra</span> would be used as it works well with positive cycles.</p>
             <p class="design-technique">Design technique: Greedy technique, Edge Relaxation, Single source shortest path</p>
             <p class="efficiency">Efficiency: Θ(|V|^2) for graphs represented by their weight matrix and the priority queue implemented by an unordered array and O(|E| log|V|) for graphs represented by their adjacency lists and the priority queue implemented as a min-heap.</p>
@@ -153,11 +161,19 @@
             <p>- In order to narrow down the traveling by knowing which two places take less cost, time, and distance to travel, <span class="highlight">Floyd</span> would be used in cases where tourists wish to travel only a few nearby places.</p>
             <p class="design-technique">Design technique: Dynamic Programming, Kleene Closure, All-pairs shortest path</p>
             <p class="efficiency">Efficiency: cubic</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/Kruscal.cpp" target="_blank">Kruscal code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/dijkstra.cpp" target="_blank">Dijkstra code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/floyd.cpp" target="_blank">Floyd's algorithm code</a>
             <div class="divider"></div>
             
             <li><b class="underline">7. Identifying peak tourist months:</b></li>
             <p>- To keep track of the maximum revenue generated from each month, a <span class="highlight">sparse table</span> would be used for statistical planning.</p>
             <p class="design-technique">Design technique: Dynamic Programming, Pre-Computing.</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/sparse_table.cpp" target="_blank">Sparse table code</a>
             <div class="spacer"></div>
         </ul>
     </div>
@@ -177,11 +193,15 @@
             <p>- To keep track of total energy distributed to various areas over a period of time by cumulatively adding new supplied energy to previous ones, <span class="highlight">Fenwick trees</span> would be used for this purpose. It can also query how much energy a set of customers or a group of sectors consumed in the last month.</p>
             <p class="design-technique">Design technique: Dynamic programming, Pre-computing</p>
             <p class="efficiency">Efficiency: O(log n)</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/fenwick.cpp" target="_blank">Fenwick tree code</a>
             <div class="divider"></div>
 
             <li><b class="underline">3. Determining connectivity by shared energy line:</b></li>
             <p>- In order to know which group of areas or a particular region receives energy from the same source, <span class="highlight">union-find</span> would play a role.</p>
             <p>- It could help the concerned distributing sector to improve the lines or connect the regions to any newly built line or source.</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/union_find.cpp" target="_blank">Union-Find code</a>
             <div class="spacer"></div>
             <div class="divider"></div>
 
@@ -189,6 +209,8 @@
             <p>- To handle large datasets of various wind and solar plants present in the city and the energy it generates, efficient sorting is required. For this, <span class="highlight">Quick sort</span> would be used to sort the energy data so that distributors know which plants are generating more power and whether optimization is needed.</p>
             <p>- Similarly, it would determine which areas consume more energy to install more pipelines and which consume less in order to merge nearby pipelines.</p>
             <p class="design-technique">Design technique: Divide and Conquer</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/Quick%20sort.cpp" target="_blank">Quick sort code</a>
             <div class="spacer"></div>
             <div class="divider"></div>
 
@@ -196,8 +218,27 @@
             <p>- During conflicts among customers and the agency, the agency would use <span class="highlight">Knuth-Morris-Pratt algorithm</span> to search whether the customer has registered for the supply agency and whether they are eligible to receive the supply.</p>
             <p class="design-technique">Design technique: Pattern Matching</p>
             <p class="efficiency">Efficiency: O(n + m) where n is the length of the string and m is the length of the pattern</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/kmp.cpp" target="_blank">Knuth-Morris-Pratt code</a>
             <div class="spacer"></div>
             <div class="divider"></div>
+
+            <li><b class="underline">6. Optimizing energy transmission</b></li>
+            <p>- To decide the path/layout that connects continuously from distributor to household without breaks which is efficient for designing pipeline for energy supply for the big city.</p>
+            <p>- For this, <span class="highlight">Prim's algorithm</span> is best suited as it would connect substations with minimal cost while ensuring all substations are connected.</p>
+            <p class="design-technique">Design technique: Edge Relaxation, Greedy technique, Minimum Spanning tree algorithm</p>
+            <p class="efficiency">Efficiency:O(m) : Θ(|V|^2) for graphs represented by their weight matrix and the priority queue implemented by an unordered array and O (|E| log|V|) for graphs represented by their adjacency lists and the priority queue implemented as a min-heap.</p>
+            
+            <p>- in order to find the shortest distance from distributor to each area,<span class="highlight">Bellman-Ford algorithm</span> could be used.</p>
+            <p>-As it works for negative weight cycles as there could be energy losses while transmission.
+            <p class="design-technique">Design technique: Edge Relaxation, Dynamic Programming, Single source shortest path</p>
+            <p class="efficiency">Efficiency: O(|V| |E|).</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/prim.cpp" target="_blank">Prim's algorithm code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/bellman_ford.cpp" target="_blank">Bellman Ford algorithm code</a>
+            <div class="spacer"></div>
+        
         </ul>
     </div>
 
@@ -205,33 +246,60 @@
     <div class="section-box">
         <p class="section-title"><b><u>iii) ROAD TRANSPORT</b></u></p>
         <p class="subcases-title"><u>Sub cases:</u></p>
-        
+
         <ul>
-            <li><b class="underline">1. Mapping roads:</b></li>
-            <p>- A simple road map can be represented by <span class="highlight">adjacency lists</span> to show which roads are connected. It will store all available routes from one location to another.</p>
-            <div class="spacer"></div>
+            <li><b class="underline">1. Managing toll traffic:</b></li>
+            <p>- For bigger cities, where there are so many roads and highways for smooth transport, things can get chaotic if the toll process is not functioning smoothly. For this, <span class="highlight">queues</span> can be used to ensure that vehicles getting in the queue first are addressed first, avoiding conflicts.</p>
+            <p>- In cases where a road network is divided into multiple segments and each segment has a toll fee that can change over time, a <span class="highlight">segment tree</span> would be used. This allows for quick computation of the total toll cost over a range of roads and efficient updates to toll costs.</p>
+            <p class="design-technique">Design technique: Divide and conquer, Hierarchical data structure, Lazy propagation</p>
+            <p class="efficiency">Efficiency: O(n log n)</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/segment_trees.cpp" target="_blank">Segment tree code</a>
             <div class="divider"></div>
 
-            <li><b class="underline">2. Managing traffic:</b></li>
-            <p>- To handle the traffic data at different points, we use <span class="highlight">heaps</span> to manage the priority of routes and avoid traffic jams during peak hours.</p>
+            <li><b class="underline">2. Area hunting:</b></li>
+            <p>- To search for names of nearby areas, a <span class="highlight">trie</span> can be used to autocomplete and generate possible routes the user might want to travel.</p>
+            <p>- Additionally, <span class="highlight">union-find</span> can determine which roads together lead to the same destination.</p>
+            <p class="design-technique">Design technique: Hierarchical Data and Prefix Trees</p>
+            <p class="efficiency">Efficiency: O(n), where n is the length of the word</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/trie.cpp" target="_blank">Trie code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/union_find.cpp" target="_blank">Union-Find code</a>
             <div class="divider"></div>
 
-            <li><b class="underline">3. Route optimization for public transport:</b></li>
-            <p>- For public transportation planning, we need to identify the shortest routes available. The <span class="highlight">Dijkstra algorithm</span> will help in calculating the shortest possible route between various transport points (bus stops, metro stations).</p>
-            <p class="design-technique">Design technique: Greedy algorithm, Single source shortest path</p>
-            <p class="efficiency">Efficiency: O(|V|^2)</p>
+            <li><b class="underline">3. Optimizing road transport:</b></li>
+            <p>- While traveling by road, if one is lost or encounters a dead end, they would backtrack by one step to explore other ways. This is inspired by <span class="highlight">Breadth First Search (BFS)</span>, where we cautiously travel and backtrack.</p>
+            <p class="design-technique">Design technique: Backtracking, Cautious Travel, Pruning</p>
+            <p class="efficiency">Efficiency: O(V + E), where V is the number of vertices (nodes) and E is the number of edges in the graph</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/bfs.cpp" target="_blank">BFS code</a>
             <div class="divider"></div>
 
-            <li><b class="underline">4. Traffic prediction during peak hours:</b></li>
-            <p>- <span class="highlight">Machine learning algorithms</span> can predict road traffic based on historical data. This would allow the city to plan accordingly and manage resources effectively during peak hours.</p>
-            <div class="spacer"></div>
+            <li><b class="underline">4. Traffic Management:</b></li>
+            <p>- When a person searches for a particular route using the <span class="highlight">Knuth-Morris-Pratt algorithm</span>, it can quickly check for search matches and display the status of the route. For example, if a person has to travel via 'Sahara Marg' and there is ongoing work, the algorithm can display a notification. This approach is well-suited for large databases.</p>
+            <p class="design-technique">Design technique: Pattern Recognition, Prefix and Suffix, Pre-Computing</p>
+            <p class="efficiency">Efficiency: O(m) to compute prefix, O(n) to compute pattern, O(m+n) total</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/kmp.cpp" target="_blank">Knuth-Morris-Pratt</a>
             <div class="divider"></div>
 
-            <li><b class="underline">5. Dynamic toll management:</b></li>
-            <p>- A dynamic toll system can optimize traffic flow by adjusting toll rates based on traffic congestion using <span class="highlight">HashMaps</span> for fast lookups and updates of toll rates based on real-time data.</p>
-            <div class="spacer"></div>
-            <div class="divider"></div>
+            <li><b class="underline">5. Shortest paths:</b></li>
+            <p>- If the toll fee or distance is treated as a weight on the edge between two nodes, <span class="highlight">Dijkstra's algorithm</span> can find the minimum cost route considering both distance and toll fees. It is also effective for graphs with positive edge weights. A <span class="highlight">min-heap</span> can be used in Dijkstra's algorithm for efficiently selecting the next road based on the lowest toll cost or shortest travel time.</p>
+            <p>- To connect a series of cities with roads, <span class="highlight">Prim's algorithm</span> can find the least expensive way to connect them while maintaining continuous connectivity, as it works on connected graphs.</p>
+            <p>- The distance between any two places (e.g., North government office to the south) would require <span class="highlight">Floyd-Warshall algorithm</span> to generate the shortest path between a pair of points.</p>
+            <p class="design-technique">Design technique: Graph algorithms, Greedy method, Dynamic Programming</p>
+            <p class="efficiency">Efficiency: Dijkstra - O(V log V + E), Prim’s - O(E log V), Floyd-Warshall - O(V^3)</p>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/dijkstra.cpp" target="_blank">Dijkstra code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/prim.cpp" target="_blank">Prim code</a>
+            <br>
+            <a href="https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/floyd.cpp" target="_blank">Floyd code</a>
+           <div class="divider"></div>
         </ul>
+         
+        
     </div>
 
 </body>
