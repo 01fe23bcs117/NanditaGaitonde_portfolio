@@ -89,29 +89,33 @@
 
 ## **Business cases 🤝 SDG Targets and Indicators** 
 1. **TOURISM**
-   - **Goal-8** : Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.
-   - **SDG Target 8.9** :  By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products.
-   - **SDG Indicator** : **8.9.1** Tourism direct GDP (as a percentage of total GDP and in growth rate); and number of jobs in tourism industries (as a percentage of total jobs and growth rate of jobs, by sex) .
-  
-   - The SDG promotes tourism in showcasing local products and culture. It also promotes job opportunities and directly impact in revenue generation which is exactly what this business case is aiming for.
-   - This would require us to find the quickest/shortest path that would join every tourist site and also make the path quicker connecting each site. Kruscal would be a good option to find the shortest path connecting every site. [Kruscal code](https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/Kruscal.cpp)
+ -SDG Target 11.4 : Strengthen efforts to protect and safeguard the world’s cultural and natural heritage.
+
+-SDG Indicator : 11.4.1 : Share of municipal budget which is dedicated to the preservation, protection and conservation of state/national cultural natural heritage, including World Heritage sites. 
+
+-The SDG promotes tourism in showcasing local products and culture. It could also promote job opportunities and directly impact in revenue generation which is what this business case is aiming for.
+
+-This would require us to find the quickest/shortest path that would join every tourist site and also make the path quicker connecting each site. Kruscal would be a good option to find the shortest path connecting every site. Kruscal code
+
   
 2. **ENERGY GENERATION AND SUPPLY**
-   - **SDG Goal-7** : Ensure access to affordable, reliable, sustainable and modern energy for all.
-   - **SDG Target 7.1** :  By 2030, ensure universal access to affordable, reliable and modern energy services.
-   - **SDG Indicator** : - **7.1.1** :  Percentage of household with access to electricity.           
-                         - **7.1.2** : Percentage of household with primary reliance on clean fuels and technology.
+   -SDG Target 11.6 : By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management. 
 
-   - Of 759 milion  people , 1 out of 10 do not have access to electricity and have to use biomass fuels such as charcoal, coal which is leading to death of children due to indoor pollution.
-   - The SDG goal-7 aims to replace the open fires and outdated stoves to affordable and clean energy by 2030.
-   - Energy efficiency and increase use of renewable sources contribute to seriousness of climate change  and reduce the risk of disasters.
-   - We need to sort based on which areas needs to be supplied with energy and which is barren land for now. For that a sorting algorithm needs to be implemented. [Quick sort code](https://github.com/01fe23bcs117/NanditaGaitonde_portfolio/blob/main/codes/Quick%20sort.cpp)
+-SDG Indicator : 11.6.2 : 11.6.2 Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted). 
+
+-Of 759 million people , 1 out of 10 do not have access to electricity and have to use biomass fuels such as charcoal, coal which is leading to death of children due to indoor pollution.
+
+-The SDG goal-7 aims to replace the open fires and outdated stoves to affordable and clean energy by 2030.
+
+-Energy efficiency and increase use of renewable sources contribute to seriousness of climate change and reduce the risk of disasters.
+
+-We need to sort based on which areas needs to be supplied with energy and which is barren land for now. For that a sorting algorithm needs to be implemented. 
   
 3. **ROAD TRANSPORT**
-   - **SDG Goal-9** : Make cities and human settlements inclusive, safe, resilient and sustainable 
-   - **SDG Target 11.2** : By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons.
-   - **SDG Indicator** : **11.2.1** : Proportion of the population that has convenient access to public transport, disaggregated by age group, sex and persons with disabilities.
-  
-   - The SDG aims on connecting all the major places and providing safety in transport inclusive of physically challenged and elderly people.
-   - This comes in accordance with efficient land use planning , in the sense that how much area is used for roads and its connectivity. It mainly concentrated on residentials and employement generative areas.
-     
+  -SDG Target 11.2 : By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons.
+
+-SDG Indicator : 11.2.1 : Proportion of the population that has convenient access to public transport, disaggregated by age group, sex and persons with disabilities.
+
+-The SDG aims on connecting all the major places and providing safety in transport inclusive of physically challenged and elderly people.
+
+-This comes in accordance with efficient land use planning , in the sense that how much area is used for roads and its connectivity. It mainly concentrated on residentials and employment generative areas.
