@@ -1,48 +1,197 @@
-<style>
-    .hover-box {
-        background-color: #44475a; /* Default box color */
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        text-align: center;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAA Course Project</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <style>
+        body {
+            background-color: #282a36; /* Dark purple background */
+            color: #f8f8f2;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
 
-    .hover-box:hover {
-        background-color: #6272a4; /* Lighter purple on hover */
-        transform: scale(1.05); /* Slightly enlarges the box */
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-    }
+        .highlight {
+            font-size: 50px;
+            color: #f8f8f2; /* Yellow color for the statement */
+            font-weight: bold;
+        }
 
-    .hover-box h1 {
-        font-size: 36px;
-        font-weight: bold;
-        color: #f8f8f2;
-        text-decoration: underline;
-        margin-bottom: 20px;
-    }
+        a {
+            color: #f8f8f2; /* Light blue color */
+            text-decoration: none; /* Removes underline by default */
+        }
 
-    .hover-box h2 {
-        font-size: 30px;
-        color: #f8f8f2;
-        margin-bottom: 10px;
-    }
+        a:hover {
+            color: #ff79c6; /* Pink color when hovered */
+            text-decoration: underline; /* Adds underline on hover */
+        }
 
-    .hover-box p {
-        font-size: 28px;
-        color: #f8f8f2;
-        margin: 10px 0;
-    }
+        h1, h2 {
+            color: #f8f8f2; /* Yellow color for headers */
+            margin-top: 20px;
+        }
 
-    .hover-box ul {
-        list-style-type: disc;
-        text-align: left;
-        display: inline-block;
-    }
+        .business-cases {
+            font-size: 36px; /* Larger font size */
+            font-weight: bold;
+            text-decoration: underline;
+            color: #f8f8f2; /* Yellow color */
+            margin-top: 20px;
+        }
 
-    .hover-box ul li {
-        font-size: 24px;
-        color: #f8f8f2;
-    }
-</style>
+        .intro-text {
+            color: #f8f8f2;
+            font-size: 30px; /* Slightly smaller than the printf line */
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 24px; /* Set description font size */
+            text-align: center;
+        }
+
+        .header-box {
+            background-color: #44475a; /* Slightly lighter purple for boxes */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px; /* Rounded corners for the boxes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .hover-box {
+            background-color: #44475a; /* Default box color */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .hover-box:hover {
+            background-color: #6272a4; /* Lighter purple on hover */
+            transform: scale(1.05); /* Slightly enlarges the box */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        }
+
+        .hover-box h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #f8f8f2;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        .hover-box h2 {
+            font-size: 30px;
+            color: #f8f8f2;
+            margin-bottom: 10px;
+        }
+
+        .hover-box p {
+            font-size: 28px;
+            color: #f8f8f2;
+            margin: 10px 0;
+        }
+
+        .hover-box ul {
+            list-style-type: disc;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .hover-box ul li {
+            font-size: 24px;
+            color: #f8f8f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DAA-Course Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Course-Reflections.html">Course Reflections</a></li>
+                <li><a href="SDG-mapping.html">SDG Mapping</a></li>
+                <li><a href="implementation.html">Implementation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-header">
+        <h1 class="highlight">printf("Hello <s>World</s> Code Creators ! ");</h1>
+    </div>
+
+    <p class="intro-text">I am Nandita Gaitonde, currently debugging my way through the Computer Science department from KLE Technological University, Hubballi.</p>
+
+    <p class="business-cases">BUSINESS CASES:</p>
+
+    <div class="header-box">
+        <h1>Tourism 🏰</h1>
+        <p>Since the city of Chitranagari is designed with reference to a city in Rajasthan, which is rich in culture and tourism, it does have many tourist attractions. Tourism has been included with the motive of 1. Showcasing India's heritage and 2. The revenue generated from these could be used for the city's infrastructural development. Tourist attractions include a fort, palace, amusement park, botanical garden, museum. This business case includes finding the best way these tourist spots could be showcased in order to generate more revenue.</p>
+    </div>
+
+    <div class="header-box">
+        <h1>Energy generation and supply ⚡</h1>
+        <p>A city with a 1500 sq.km area would indeed harbor a lot of households, at least in the near future, which would lead to high energy consumption, mainly electricity. For this, wind power and solar power plants are set up. Along with this, it needs to be properly distributed to every household efficiently, for which efficient pipelines would be required, which this business case aims to solve.</p>
+    </div>
+
+    <div class="header-box">
+        <h1>Road transport 🚳</h1>
+        <p>Such a huge city, with an area greater than the city of Delhi, India (1484 sq.km), would have people commuting to different corners via roads and would require efficient roads well connected within the city and also connecting the neighboring areas. This business case aims to reduce redundancy of paths and provide adequate, good-quality transport. It also aims to isolate the highways so that they would not interfere with the busy city.</p>
+    </div>
+
+    <!-- SDG Mapping Section -->
+    <div class="hover-box">
+        <h1>*** SDG Mapping ***</h1>
+        <h2>**In this section I have mapped the developed case studies to SDG 11:</h2>
+        <p>*The SDG target and indicator is as follows:</p>
+        <ul>
+            <li><b>TOURISM</b></li>
+            <p>- SDG Target 11.4: Strengthen efforts to protect and safeguard the world’s cultural and natural heritage.</p>
+            <p>- SDG Indicator 11.4.1: Share of municipal budget dedicated to preservation, protection, and conservation of state/national cultural and natural heritage, including World Heritage sites.</p>
+
+            <li><b>ENERGY GENERATION AND SUPPLY</b></li>
+            <p>- SDG Target 11.6: By 2030, reduce the adverse per capita environmental impact of cities, paying special attention to air quality and municipal and other waste management.</p>
+            <p>- SDG Indicator 11.6.2: Annual mean levels of fine particulate matter (e.g., PM2.5 and PM10) in cities (population weighted).</p>
+
+            <li><b>ROAD TRANSPORT</b></li>
+            <p>- SDG Target 11.2: By 2030, provide access to safe, affordable, and sustainable transport systems for all.</p>
+            <p>- SDG Indicator 11.2.1: Proportion of the population that has convenient access to public transport, disaggregated by age group, sex, and persons with disabilities.</p>
+        </ul>
+    </div>
+
+    <!-- Course Reflections Section -->
+    <div class="hover-box">
+        <h1>*** Course Reflections ***</h1>
+        <h2>**In this section I have noted all my reflections on the course:</h2>
+        <ul>
+            <li>* Iteration, Recursion, Backtracking</li>
+            <li>* Space and Time efficiency</li>
+            <li>* Design Principles</li>
+            <li>* Tree Data Structures</li>
+            <li>* Graphs</li>
+            <li>* Sorting and Searching</li>
+            <li>* Spanning Trees and Shortest Path</li>
+            <li>* Algorithm Design Techniques</li>
+        </ul>
+        <p>*More about this, has been discussed further.</p>
+    </div>
+
+    <!-- Implementation Section -->
+    <div class="hover-box">
+        <h1>*** Implementation ***</h1>
+        <h2>**This section includes the subcases of each Business case:</h2>
+        <p>*How it can be implemented in the city designed.</p>
+        <p>*The section contains how several algorithms and data structures could be inculcated in the subcases.</p>
+        <p>*More about it, has been discussed further.</p>
+    </div>
+</body>
+</html>
